@@ -1,0 +1,8 @@
+/target/
+/ReportJsonFiles/
+*.idea
+*.iws
+*.iml
+*.ipr
+modules.xml
+uiDesigner.xml
