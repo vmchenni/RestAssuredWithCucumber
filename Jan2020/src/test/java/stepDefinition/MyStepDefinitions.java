@@ -11,6 +11,7 @@ import io.restassured.RestAssured;
 import org.junit.Assert;
 import pojoclasses.AddPlace;
 import pojoclasses.AddPlaceResponsePojo;
+import pojoclasses.GetUsers;
 import pojoclasses.Location;
 
 import java.util.ArrayList;
@@ -25,6 +26,7 @@ public class MyStepDefinitions {
     JsonPath js;
     public static AddPlace addPlace;
     AddPlaceResponsePojo addplaceResponse;
+    GetUsers getUsers;
     @Given("^Add place payload$")
     public void add_place_payload() throws Throwable {
         addPlace=new AddPlace();
@@ -92,5 +94,20 @@ public class MyStepDefinitions {
         location.setLat(Double.parseDouble(slat));
         location.setLng(Double.parseDouble(slng));
         addPlace.setLocation(location);
+    }
+
+    @Given("User calls get user API")
+    public void userCallsGetUserAPI() {
+        RestAssured.baseURI="https://reqres.in";
+        getUsers=given().log().all().
+        when().get("/api/users?page=2").
+        then().assertThat().statusCode(200).extract().as(GetUsers.class);
+
+    }
+
+    @Then("Verify the first_name as {string}")
+    public void verifyTheFirst_nameAs(String arg0) {
+        String fName=getUsers.getData().get(1).getFirst_name();
+        System.out.println("FName from response is"+fName);
     }
 }

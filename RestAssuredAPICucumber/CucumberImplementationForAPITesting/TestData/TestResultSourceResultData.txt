@@ -1,0 +1,4 @@
+<tr>
+<td style="width: 524px; text-align: center;">&nbsp;Feature2</td>
+<td style="width: 87px; text-align: center;">&nbsp;sStatus</td>
+</tr>

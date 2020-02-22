@@ -1,0 +1,22 @@
+What's the end point?(BaseURI/resources)
+    BaseURL/Host The website you want to hit
+    Resources   BaseUL/Resource
+    Parameters
+What are the types of rest request.?
+Headers
+
+PostMan
+RestClient
+SoapUI
+JMeter Its for load testing , Still can be used for RestAPI
+
+given()
+    RequestParameter
+    Parameter
+    request cookies
+when()
+    type of request you want to hit like get , post ,
+then()
+    Assertion to verify proper response,
+extract()
+    pullout body rfesponses

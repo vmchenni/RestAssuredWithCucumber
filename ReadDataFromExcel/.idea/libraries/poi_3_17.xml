@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="poi-3.17">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/poi-3.17/poi-3.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/poi-3.17/poi-examples-3.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/poi-3.17/poi-excelant-3.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/poi-3.17/poi-ooxml-3.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/poi-3.17/poi-ooxml-schemas-3.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/poi-3.17/poi-scratchpad-3.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/JARFiles/selenium-server-standalone-3.14.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/JARFiles/joda-money-1.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
